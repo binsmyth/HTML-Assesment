@@ -1,0 +1,94 @@
+<!-- 08-08-2023:
+Assignment - HTML:
+  Create a portfolio using HTML
+    Use heading tags for your name
+    Use address tag for your suburb, state and postcode
+    About yourself using p tags. Highlight the keywords
+    List out your skills
+    Write a piece of code (10 lines) from JavaScript as a sample.
+    Create a table where you want to have 10 tools listed out with their names, when was it introduced, one advantage of the tool, Website for the documentation of that tool
+    Create a form to contact you. As a user, I want to provide my name, email, phonenumber and comment -->
+    <html>
+        <head>
+            <title>Portfolio</title>
+        </head>
+        <body>
+            <h1>Vineet Man Singh</h1>
+            <address>1/1707 Dandenong Rd, Oakleigh East, VIC 3166</address>
+            <h1>About Me</h1>
+            <p>Hi, I am Vineet, a web developer. I live in Melbourne. I am looking for work as a web developer. </p>
+            <h2>Skills</h2>
+            <ul>
+                <li>Javascript</li>
+                <li>Css</li>
+                <li>Html</li>
+                <li>React</li>
+            </ul>
+            <h2>Examples of my skills</h2>
+            <pre>
+                <code>
+                    if(age>=18)
+                        console.log("You are an adult");
+                    if(age<18)
+                        console.log("You are NOT an adult");
+                </code>
+            </pre>
+            <h2>Tools</h2>
+            <table border="5" cellspacing="1">
+                <thead>
+                    <tr>
+                        <th>Tool name</th>
+                        <th>Introduced when</th>
+                        <th>Advantage</th>
+                        <th>Website</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Git</td>
+                        <td>7 April 2005</td>
+                        <td>
+                            <ol>
+                                <li>Good distributed model as each developer gets a local repository with a complete history of commits which makes git fast compared to other VCs.</li>
+                                <li>Branching capabilities and merging are easy (as they are cheap), and they have good data integrity.</li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>React</td>
+                        <td>May 29, 2013</td>
+                        <td>
+                            <ol>
+                                <li>Less time is consumed in modernization, code is maintained, and all this is performed economically.</li>
+                                <li>Branching capabilities and merging are easy (as they are cheap), and they have good data integrity.</li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Docker</td>
+                        <td>2013</td>
+                        <td>
+                            <ol>
+                                <li>Fast deployment, ease of creating new instances, and faster migrations.</li>
+                            </ol>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>Contact Me!</h2>
+            <form method="post" action="mailto:binsmyth@gmail.com">
+                <fieldset>
+                    <label for="input-text-name">Name</label>
+                    <input type="text" id="input-text-name" placeholder="Abcdef" required /><br />
+                    <label for="input-text-phone">Phone Number</label>
+                    <input type="tel" id="input-text-phone" placeholder="04xxxxxxxx"/><br />
+                    <label for="input-text-email">Email</label>
+                    <input type="email" id="input-text-email" placeholder="abc@email.com"/><br />
+                    <label for="textarea-comments">Comments</label>
+                    <textarea id="textarea-comments" rows="20" cols="40"></textarea>
+                </fieldset>
+                
+                <button>Submit</button>   
+            </form>
+        </body>
+    </html>
